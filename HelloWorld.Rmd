@@ -1,0 +1,41 @@
+---
+title: "Hello World"
+author: "Lucas Augusto"
+date: "03/07/2020"
+output: pdf_document
+---
+
+## This is a Markdown File
+
+### I'll use this as a test for Markdown Projects
+
+**This is in bold** while *this is in italics*
+
+~~It's also easy to strikethrough texts~~ and make superscripts, as in m^2^
+
+I can also create links, for instance the link to [my github page](https://github.com/lucasli-q)
+
+```{r, echo=FALSE}
+print("I can also write texts using the command print")
+```
+
+```{r}
+print("but the command itself will only show if I don't use echo=FALSE")
+```
+
+> "If I'm trying to quote someone, I can do that as well" - Me
+
+Lists are also possible if:
+
+* You enroll in a Data Science Course
+  + Especially if it is the one available on Coursera
+* You read the R Markdown Cheat Sheet
+
+What about a simple table?
+
+Name | Age | Profession
+-----|-----|------------
+Lucas| 25  | Chemist
+João | 24  | Artist
+
+An equation is also possible: $n=p.V/R.T$
