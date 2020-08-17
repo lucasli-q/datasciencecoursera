@@ -1,0 +1,35 @@
+---
+title: "Codebook for the run_analysis code"
+author: "Lucas Augusto"
+date: "17/08/2020"
+output: html_document
+---
+
+##Getting the data used
+
+The data is available in the following url: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+##Summation of data
+
+The dataset is a compilation of data extracted from accelerometers and gyroscopes of different subjects performing different activities.
+
+It was available in different .txt files in which only a few were used during the analysis. The names of the .txt files and their respective names in the code "run_analysis" are the following:
+
+features - UCI HAR Dataset/features.txt - character vector containing the 561 names of the variables analysed
+
+activitylabels - UCI HAR Dataset/activity_labels.txt - character vector containing the 6 activies performed by the subjects
+
+trainX - UCI HAR Dataset/train/X_train.txt - data frame containing the "train" subjects data
+
+trainY - UCI HAR Dataset/train/y_train.txt - data frame containing the activities performed and identified by number
+
+trainsubject - UCI HAR Dataset/train/subject_train.txt - data frame containing the subjects studied identified by number
+
+testX - UCI HAR Dataset/test/X_test.txt - data frame containing the "test" subjects data
+
+testY - UCI HAR Dataset/test/y_test.txt - data frame containing the activities performed and identified by number
+
+testsubject - UCI HAR Dataset/test/subject_test.txt - data frame containing the subjects studied identified by number
+
+The final goal of the code is to produce a data frame named "tidydata.txt" containing the subjects identified by number, the activities identified by name and the variables in the trainX and testX files that collected the mean or standard deviation of a measure.
+
